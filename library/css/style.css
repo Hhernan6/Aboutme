@@ -77,7 +77,7 @@ nav a {
 }
 
 nav a:hover {
-	border-bottom: 2px solid rgb(5, 85, 112);
+	border-bottom: 4px solid rgb(5, 85, 112);
 	
 }
 nav li {
@@ -153,7 +153,7 @@ h2 {
 	justify-content: space-between;
 	justify-content: center;
 	padding: 15px 12px;
-	box-shadow: 8px 8px 8px  rgb(12, 119, 155);
+	box-shadow: 8px 8px 8px  rgb(5, 85, 112);
 	border: 2px white solid;
 	margin-bottom: 50px;
 }
@@ -303,7 +303,7 @@ MY-WORK
 	padding: 10px;
 	color: #000000;
 	text-shadow: none;
-	background: rgb(82, 82, 214);
+	background: rgb(9, 130, 170);
 	border: solid 2px white;
 	margin: 0 auto;
 	width: 88.6%;
@@ -312,6 +312,7 @@ MY-WORK
 }
 .website-projects {
 	background-color: rgb(5, 85, 112);
+	border: solid 2px white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -336,7 +337,7 @@ MY-WORK
 }
 .website-projects figure {
 	width: 90%;
-	height: 90%;
+	height: 85%;
 	padding: 0 5px 0 5px;
 }
 .website-projects figure img {
@@ -352,14 +353,14 @@ MY-WORK
 }
 .website-projects button {
 	margin-bottom: 10px;
-	height: 5px;
+	height: 55px;
 	font-size: 27px;
 	font-weight: 700;
 	font-family: 'Raleway', "sans-serif";
 	border: solid 2px black;
 }
 .website-projects button:hover {
-	background-color: rgb(6, 105, 191);
+	background-color: rgb(9, 130, 170);
 	color: white;
 
 	
