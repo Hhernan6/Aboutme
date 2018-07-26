@@ -1,2 +1,426 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*******************
+INDEX 
+********************/
+body {
+	background-color: aliceblue;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+/**********
+NAV STYLING
+***********/
+
+nav {
+	background-color: white;
+	width: 100%;
+	text-align: right;
+	position: fixed;
+	top: 0;
+	border-bottom: solid 3px #000000;
+	height: 56px;
+	
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+}
+nav a {
+    color:black;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Raleway', "sans-serif";
+}
+
+nav a:hover {
+	border-bottom: 2px solid rgb(5, 85, 112);
+	
+}
+nav li {
+    color: white;
+    display: inline-block;
+    padding: 18px 10px;
+}
+/********
+MAIN CONTENT OF HOMEPAGE
+*********/
+main {
+	margin-top: 58px;
+	margin-bottom: 2%;
+	height: 100%;
+}
+.banner {
+	background-image: url(../img/binarycode.jpg);
+	height: 500px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2%;
+	
+}
+.banner-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: rgb(5, 85, 112);
+	height: 45%;
+	width: 45%;
+	
+	
+}
+.banner-text h1 {
+	font-size: 4.5rem;
+	color: white;
+	font-weight: 700;
+	font-family: 'Acme', sans-serif;
+}
+.banner-text p {
+	font-size: 3rem;
+	color: white; 
+}
+.main-content {
+	width: 95%;
+	height: 600px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-evenly;
+}
+h2 {
+	font-size: 8rem;
+	text-align: center;
+	margin: 2% 0;
+	font-weight: 700;
+	text-shadow:5px 5px 10px rgb(17, 17, 17);
+	
+}
+.inner-content {
+	background-color:  rgb(3, 121, 160);
+	width: 55%;
+	height: 550px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	justify-content: center;
+	padding: 15px 12px;
+	box-shadow: 8px 8px 8px  rgb(12, 119, 155);
+	border: 2px white solid;
+	margin-bottom: 50px;
+}
+.right {
+	margin-left: 1%;
+}
+.left {
+	margin-right: 1%;
+}
+.inner-content p {
+	color: white;
+	width: 100%;
+	height: 300px;
+	font-size: 1.3rem;
+	line-height: 1.5;
+	font-family: 'Raleway', "sans-serif";
+
+}
+
+.inner-content img{
+	width: 50%;
+	height: 45%;
+	margin-top: 10px;
+	
+}
+footer img {
+	height: 50px;
+	width: 50px;
+}
+footer {
+	text-align: center;
+	border-top: solid 2px black;
+	background-color: white;
+	width: 100%;
+	height: 150px;
+	margin: auto auto 0 auto;
+}
+/**********
+BIOGRAPHY STYLING
+**********/
+.biography-heading {
+	font-size: 5rem;
+	text-decoration: underline;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.inner-heading  {
+	font-size: 5rem; 
+	color: white;
+	text-shadow: none;
+	text-decoration: underline;
+}
+
+.bio-content {
+	width: 80%;
+	margin: 0 auto;
+	border: 2px solid black;
+	background-color: rgb(5, 85, 112);
+	box-shadow: 8px 8px 8px  rgb(12, 119, 155);
+	
+}
 
 
+.bio-content  img {
+	width: 40%;
+	margin-bottom: 20px;
+	border: black solid 2px;
+}
+.bio-figure {
+	text-align: center;
+	padding: 30px 50px 50px 50px;
+}
+figcaption {
+	font-size: 1.5rem;
+	line-height: 1.8;
+	width: 85;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	font-family: 'Raleway', "sans-serif";
+}
+.goals {
+margin-bottom: 3%;
+margin-top: 3%;
+}
+/**********
+CONTACT PAGE
+***********/
+.contact-heading {
+	text-align: center;
+	font-size: 5rem;
+	text-decoration: underline;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 30px;
+
+	
+}
+form {
+	width: 90%;
+	height: 750px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color:  rgb(5, 85, 112);
+	box-shadow: 8px 8px 8px  rgb(12, 119, 155);
+}
+label {
+	display: block;
+	color: white;
+	padding: 10px 0 10px 0;
+	font-size: 1.5rem;
+
+}
+input {
+	width: 300px;
+	height: 20px;
+	font-size: 1rem;
+}
+textarea {
+	width: 100%;
+}
+.form-button {
+	width: 10%;
+}
+/*********
+MY-WORK
+**********/
+.work-heading {
+	font-size: 5rem; 
+	color: rgb(36, 32, 32);
+	text-shadow: none;
+	text-decoration: underline;
+	text-align: center;
+	margin: 20px 0 30px 0;
+}
+.work-content {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	height: 670px;
+}
+.website-heading{ 
+	font-size: 3.8rem;
+	padding: 10px;
+	color: #000000;
+	text-shadow: none;
+	background: rgb(82, 82, 214);
+	border: solid 2px white;
+	margin: 0 auto;
+	width: 88.6%;
+
+
+}
+.website-projects {
+	background-color: rgb(5, 85, 112);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	box-shadow: 5px 5px 5px  rgb(17, 164, 213);
+}
+.gateway {
+	margin-right: 2%;
+}
+.david-hasselhoff {
+	margin-left: 2%;
+}
+.website-projects h3 {
+	margin: 25px 0;
+	font-size: 2.1rem;
+	font-weight: 500;
+	color: white;
+	border-bottom: 5px solid black;
+	
+}
+.website-projects figure {
+	width: 90%;
+	height: 90%;
+	padding: 0 5px 0 5px;
+}
+.website-projects figure img {
+	width: 75%;
+	height: 55%;
+	align-self: center;
+	margin-left: 15%;
+}
+.website-projects figure figcaption {
+	font-size: 1.1rem;
+	line-height: 1.7;
+	width: 98%;
+}
+.website-projects button {
+	margin-bottom: 10px;
+	height: 5px;
+	font-size: 27px;
+	font-weight: 700;
+	font-family: 'Raleway', "sans-serif";
+	border: solid 2px black;
+}
+.website-projects button:hover {
+	background-color: rgb(6, 105, 191);
+	color: white;
+
+	
+}
+
+
+
+/***********
+GALLERY-PAGE
+************/
+.gallery {
+	margin-top: 50px;
+}
+
+.gallery-images {
+	display: flex;
+	justify-content: space-evenly;
+	max-width: 100%;
+	height: 500px;
+
+}
+.gallery-images img {
+	height: 300px;
+	width: 400px;
+}
+.gallery-images figcaption {
+	background-color: rgb(5, 85, 112);
+	width: 100%;
+	height: 30%;
+	font-family: 'Raleway', "sans-serif";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*********
+MEDIA QUERIES
+**********/
+@media screen and (max-width: 420px) {
+	.banner-text {
+		width: 70%;
+		height: 30%;
+	}
+	.banner-text h1 {
+		font-size: 2rem;
+	}
+	.banner-text p {
+		font-size: 1.5rem;
+	}
+	h2 {
+		font-size: 3rem;
+	}
+	nav li {
+		display: none;
+	}
+	.main-content {
+		display: block;
+	}
+	.inner-content p {
+		font-size: 1rem;
+	}
+	.inner-content {
+		width: 90%;
+	}
+}

@@ -3,7 +3,9 @@
     <head>
         <title>Horacio Hernandez | Contact</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="library/css/normalizer.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="stylesheet" href="library/css/style.css">
     </head>
     <body>
@@ -21,7 +23,7 @@
         </header>
         <main>
             <section>
-                <h1>Contact Me</h1>
+                <h1 class="contact-heading">Contact Me</h1>
                 <form action="#" method="POST">
                     <div>
                         <label for="firstName">First Name:</label>
@@ -35,8 +37,11 @@
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email"/>
                     </div>
-                        <label for="companyName">Company Name: </label>
+                    <div>
+                        <label for="companyName">Company Name:</label>
                         <input type="text" id="companyName" name="companyName">
+                    
+                    </div>
                     <div>
                         <label for="phoneNum">Phone Number:</label>
                         <input type="tel" id="phoneNum" name="phoneNum">
@@ -45,7 +50,7 @@
                         <label for="comments">Have any Questions or Comments?</label>
                         <textarea id="comments" name="textarea" cols="50" rows="20"></textarea>
                     </div>
-                    <input type="submit" name="submit" value="Submit">
+                    <input class="form-button" type="submit" name="submit" value="Submit">
                 </form>
             </section>
         </main>
