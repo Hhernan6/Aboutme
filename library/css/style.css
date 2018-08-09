@@ -85,6 +85,9 @@ nav li {
     display: inline-block;
     padding: 18px 10px;
 }
+.active {
+	border-bottom: 4px solid rgb(5, 85, 112);
+}
 /********
 MAIN CONTENT OF HOMEPAGE
 *********/
@@ -179,81 +182,41 @@ h2 {
 	margin-top: 10px;
 	
 }
-footer img {
+footer .social-media img {
+	margin-right: 15px;
 	height: 50px;
-	width: 50px;
+	width: 50px; 
+
+}
+footer .social-media {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
 }
 footer {
 	text-align: center;
-	border-top: solid 2px black;
+	border-top: solid 4px black;
 	background-color: white;
 	width: 100%;
-	height: 150px;
+	height: 110px;
 	margin: auto auto 0 auto;
 }
-/**********
-BIOGRAPHY STYLING
-**********/
-.biography-heading {
-	font-size: 5rem;
-	text-decoration: underline;
-	text-align: center;
-	margin-bottom: 30px;
-}
-.inner-heading  {
-	font-size: 5rem; 
-	color: white;
-	text-shadow: none;
-	text-decoration: underline;
-}
 
-.bio-content {
-	width: 80%;
-	margin: 0 auto;
-	border: 2px solid black;
-	background-color: rgb(5, 85, 112);
-	box-shadow: 8px 8px 8px  rgb(12, 119, 155);
-	
-}
-
-
-.bio-content  img {
-	width: 40%;
-	margin-bottom: 20px;
-	border: black solid 2px;
-}
-.bio-figure {
-	text-align: center;
-	padding: 30px 50px 50px 50px;
-}
-figcaption {
-	font-size: 1.5rem;
-	line-height: 1.8;
-	width: 85;
-	margin: 0 auto;
-	color: white;
-	text-align: center;
-	font-family: 'Raleway', "sans-serif";
-}
-.goals {
-margin-bottom: 3%;
-margin-top: 3%;
-}
 /**********
 CONTACT PAGE
 ***********/
 .contact-heading {
 	text-align: center;
 	font-size: 5rem;
-	text-decoration: underline;
 	text-align: center;
 	margin-top: 40px;
 	margin-bottom: 30px;
 
 	
 }
-form {
-	width: 90%;
+.contact-content {
+	width: 80%;
 	height: 750px;
 	margin: 0 auto;
 	display: flex;
@@ -279,24 +242,24 @@ textarea {
 	width: 100%;
 }
 .form-button {
-	width: 10%;
+	width: 60px;
 }
 /*********
 MY-WORK
 **********/
 .work-heading {
 	font-size: 5rem; 
-	color: rgb(36, 32, 32);
+	color: black;
 	text-shadow: none;
-	text-decoration: underline;
 	text-align: center;
 	margin: 20px 0 30px 0;
 }
 .work-content {
 	width: 90%;
-	margin: 0 auto;
+	margin: 0 auto 5% auto;
 	display: flex;
 	height: 670px;
+
 }
 .website-heading{ 
 	font-size: 3.8rem;
@@ -320,38 +283,41 @@ MY-WORK
 	height: 100%;
 	width: 100%;
 	box-shadow: 5px 5px 5px  rgb(17, 164, 213);
+	
 }
-.gateway {
-	margin-right: 2%;
-}
-.david-hasselhoff {
-	margin-left: 2%;
-}
+
+	
+
 .website-projects h3 {
 	margin: 25px 0;
 	font-size: 2.1rem;
-	font-weight: 500;
-	color: white;
+	font-weight: 700;
+	color: black;
 	border-bottom: 5px solid black;
 	
 }
 .website-projects figure {
 	width: 90%;
-	height: 85%;
+	height: 80%;
+	
 	padding: 0 5px 0 5px;
 }
+
 .website-projects figure img {
 	width: 75%;
 	height: 55%;
-	align-self: center;
-	margin-left: 15%;
+	margin-left: 13%;
 }
 .website-projects figure figcaption {
 	font-size: 1.1rem;
 	line-height: 1.7;
-	width: 98%;
+	width: 100%;
+	padding-left: 4px;
+	color: white;
+	background-color: rgb(0, 101, 134);
 }
-.website-projects button {
+
+.button input {
 	margin-bottom: 10px;
 	height: 55px;
 	font-size: 27px;
@@ -359,11 +325,71 @@ MY-WORK
 	font-family: 'Raleway', "sans-serif";
 	border: solid 2px black;
 }
-.website-projects button:hover {
+.button input:hover {
 	background-color: rgb(9, 130, 170);
 	color: white;
 
 	
+}
+
+/**********
+BIOGRAPHY STYLING
+**********/
+.biography-heading {
+	font-size: 5rem;
+	text-align: center;
+	margin: 20px 0 30px 0;
+}
+.article-content {
+	display: flex;
+	justify-content: center;
+	margin: 0 10px 0 10px;
+	width: 98%;
+	height: 100%;
+}
+.inner-heading {
+	font-size: 2.3rem;
+	padding: 10px 0;
+	background-color: rgb(41, 112, 175);
+	color: white;
+	text-shadow: none;
+	margin-top: 0;
+	height: 50px;
+	border-bottom: white 2px solid;
+}
+.inner-bio-content {
+	border: solid 2px white;
+	width: 50%;
+	height: 600px;
+	background: rgb(5, 85, 112);
+	box-shadow: 7px 7px 5px rgb(5, 125, 165);
+	
+}
+.bio-figure {
+	width: 90%;
+	margin-bottom: 2%;
+	margin: 0 auto;
+	transition: transform 2s ease;
+
+}
+.bio-figure:hover {
+	transform: scale(1.1);
+}
+.bio-figure img {
+	width: 100%;
+	height: 300px;
+
+}
+.bio-figure figcaption {
+background-color: rgb(0, 101, 134);
+color: white;
+padding: 0 2%;
+font-size: 1.1rem;
+display: flex;
+line-height: 1.3;
+width: 96%;
+height: 230px;
+font-family: 'Raleway', "sans-serif";
 }
 
 
@@ -372,33 +398,191 @@ MY-WORK
 GALLERY-PAGE
 ************/
 .gallery {
-	margin-top: 50px;
+	margin-top: 100px;
+	width: 100%;
 }
-
+.gallery h1 {
+	font-size: 5rem;
+	text-align: center;
+	
+	color: #000000;
+	margin: 0 0 20px 0;
+}
 .gallery-images {
 	display: flex;
 	justify-content: space-evenly;
-	max-width: 100%;
-	height: 500px;
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+.gallery-figure {
+	width: 28%;
+	height: 100%;
+	box-shadow: 5px 5px 2px rgb(166, 196, 223);
+	border: black 2px solid;
+
 
 }
 .gallery-images img {
-	height: 300px;
-	width: 400px;
+width: 100%;
+height: 300px;
+display: block;
 }
 .gallery-images figcaption {
 	background-color: rgb(5, 85, 112);
+	color: white;
+	font-weight: 700;
+	font-size: 1.5rem;
 	width: 100%;
-	height: 30%;
+	height: 120px;
 	font-family: 'Raleway', "sans-serif";
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
+	
+}
+/*************
+RESUME STYLING
+**************/
+.resume {
+	height: 100%;
+}
+.resume p {
+	font-family: 'Raleway', "sans-serif";
+}
+.resume-heading {
+	font-size: 5rem;
+	text-align: center;
+	text-shadow: none;
+
+	margin: 10px 0 40px 0;
+
+}
+hr {
+	border: none;
+	height: 2px;
+	background-color: #000000;
+}
+.resume-name {
+	font-size: 5.5rem;
+	text-shadow: none;
+	width: 95%;
+	margin: 0 auto;
+	border-bottom: 4px solid white;
+	background-color:rgb(41, 112, 175);
+
+}
+.resume-header-content {
+	display: flex;
+	width: 95%;
+	margin: 0 auto;
+	height: 270px;
+}
+.resume-inner-content {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(5, 85, 112);
+}
+.resume-header-content p {
+	padding: 10px 20px;
+	color: white;
+	font-size: 1.7rem;
+	line-height: 1.5
+}
+.resume-contact-content {
+	background-color: rgb(5, 128, 168);
+	border-left: 2px white solid;
+}
+.section-heading-experience {
+	margin: 30px auto 0 auto;
+	text-shadow: none;
+	font-size: 4rem;
+	width: 95%;
+	background-color: rgb(41, 112, 175);
+}
+.experience-content {
+	width: 95%;
+	display: flex;
+	margin: 0 auto;
+	height: 280px;
+	
+}
+.jobs {
+	width: 100%;
+	background-color: rgb(5, 85, 112);
+	border-top: white 2px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.middle {
+	border-left: 2px white solid;
+	border-right: 2px white solid;
+}
+.jobs h3{
+	font-size: 2.1rem;
+	margin-bottom: 10px;
+	color: white;
+	align-self: center;
+}
+.time-worked {
+	color: rgb(10, 170, 223);
+	font-size: 1.2rem;
+}
+.jobs ul li {
+	margin: 10px 0;
+	color: white;
+	font-size: 1.2rem;
+}
+.skills-education-content {
+	display: flex;
+	width: 95%;
+	margin: 20px auto;
+	height: 300px;
+	background-color: rgb(5, 85, 112);
+}
+.education, .skills {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.education {
+	border-right: white 4px solid;
+}
+.education h3 {
+	font-size: 2.1rem;
+	margin-bottom: 10px;
+	color: white;
+}
+.education-heading, .skills-heading {
+	font-size: 3rem;
+	text-shadow: none;
+	width: 100%;
+	background-color: rgb(41, 112, 175);
+	margin-top: 0;
+}
+.skills ul li, .education ul li {
+	margin: 10px 0;
+	color: white;
+	font-size: 1.4rem; 
+	margin: 15px 0;
+	color: white;
+	font-size: 1.5rem;
 }
 /*********
 MEDIA QUERIES
 **********/
 @media screen and (max-width: 420px) {
+/**********
+HOMEPAGE QUERIES
+************/
+	.main-content {
+		height: 100%;
+	}
 	.banner-text {
 		width: 70%;
 		height: 30%;
@@ -424,4 +608,164 @@ MEDIA QUERIES
 	.inner-content {
 		width: 90%;
 	}
+	/*************
+	GALLERY QUERIES
+	**************/
+	.gallery {
+		width: 100%;
+	}
+	.gallery-images {
+		display: block;
+		width: 75%;
+		margin: 0 auto;
+	}
+	.gallery-images img {
+		width: 300px;
+	}
+	.gallery-figure figcaption {
+		width: 300px;
+		height: 100px;
+	}
+	/*************
+	WORK PAGE QUERIES
+	**************/
+	.work-content {
+		height: 100%;
+		display: block;
+	}
+	.work-heading {
+		font-size: 2.8rem;
+	}
+	.website-heading {
+		font-size: 2rem;
+
+	}
+	.website-projects h3 {
+		font-size: 1.5rem;
+	}
+	.website-projects figure figcaption {
+		font-size: 10px;
+	}
+	 .david-hasselhoff {
+		margin: 10px 0 0 0;
+	}
+	.button {
+		height: 100%;
+		box-shadow: none;
+	}
+	.button input {
+		height: 20px;
+		font-size: 10px;
+	}
+/***********
+BIOGRAPHY QUERIES
+********/
+.biography-heading {
+	font-size: 2.8rem;
+}
+.article-content {
+	display: block;
+	width: 100%;
+}
+.inner-bio-content {
+	width: 90%;
+	height: 450px;
+	margin: 0 auto;
+}
+.bio-figure img {
+	height: 200px;
+}
+.bio-figure figcaption {
+
+	color: white;
+	font-size: 11.5px;
+	line-height: 2;
+	width: 100%;
+	height: 180px;
+	}
+	/************
+	CONTACT QUERIES
+	*************/
+
+	.contact-heading {
+		font-size: 2.8rem;
+	}
+	.contact-content {
+		height: 530px;
+		box-shadow: 5px 5px 5px  rgb(12, 119, 155);
+		margin-bottom: 4%;
+	}
+	label {
+		font-size: 1rem;
+	}
+	input  {
+		width: 200px;
+		height: 14px;
+	}
+	textarea {
+		height: 100px;
+		width: 300px;
+		
+	}
+	/**********
+	RESUME QUERIES
+	***********/
+	.resume-header-content, .experience-content {
+		display: block;
+	}
+	.resume-header-content p {
+		font-size: .9rem;
+	}
+	.resume-header-content {
+		width: 99%;
+		margin: 10px auto;
+
+	}
+	.resume-inner-content {
+		width: 100%;
+	}
+	.resume-name {
+		font-size: 2rem;
+		
+	}
+	.resume {
+		height: 100%;
+	}
+	.section-heading-experience {
+		font-size: 2rem;
+	}
+	.experience-content h3 {
+		font-size: 1rem;
+	}
+	.time-worked {
+		font-size: 1rem;
+	}
+	.jobs ul li{
+		font-size: 1rem;
+	}
+	.skills-education-content {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 500px;
+
+	
+	
+	}
+
+	.experience-content {
+		height: 100%;
+	}
+	.education, .skills {
+		width: 100%;
+		display: block;
+		height: 50%;
+	}
+	.skills-heading, .education-heading {
+		font-size: 1rem;
+	}
+	.skills ul li, .education ul li {
+		font-size: 1rem;
+	}
+	
 }
