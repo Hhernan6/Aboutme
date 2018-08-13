@@ -147,7 +147,7 @@ h2 {
 	
 }
 .inner-content {
-	background-color:  rgb(3, 121, 160);
+	background-color:  rgb(5, 85, 112);
 	width: 55%;
 	height: 550px;
 	display: flex;
@@ -234,12 +234,12 @@ label {
 
 }
 input {
-	width: 300px;
+	width: 400px;
 	height: 20px;
 	font-size: 1rem;
 }
 textarea {
-	width: 100%;
+	width: 500px;
 }
 .form-button {
 	width: 60px;
@@ -349,7 +349,7 @@ BIOGRAPHY STYLING
 }
 .inner-heading {
 	font-size: 2.3rem;
-	padding: 10px 0;
+	padding-top: 2px;
 	background-color: rgb(41, 112, 175);
 	color: white;
 	text-shadow: none;
@@ -370,6 +370,7 @@ BIOGRAPHY STYLING
 	margin-bottom: 2%;
 	margin: 0 auto;
 	transition: transform 2s ease;
+	
 
 }
 .bio-figure:hover {
@@ -605,6 +606,9 @@ HOMEPAGE QUERIES
 	.inner-content p {
 		font-size: 1rem;
 	}
+	.inner-content img {
+		height: 38%;
+	}
 	.inner-content {
 		width: 90%;
 	}
@@ -618,9 +622,15 @@ HOMEPAGE QUERIES
 		display: block;
 		width: 75%;
 		margin: 0 auto;
+
 	}
 	.gallery-images img {
 		width: 300px;
+	}
+	.gallery-figure {
+		border: none;
+		box-shadow: none;
+		margin-top: 20px;
 	}
 	.gallery-figure figcaption {
 		width: 300px;
@@ -710,15 +720,21 @@ BIOGRAPHY QUERIES
 	/**********
 	RESUME QUERIES
 	***********/
+	.resume-contact-content {
+		width: 100%;
+	}
+
 	.resume-header-content, .experience-content {
 		display: block;
 	}
 	.resume-header-content p {
 		font-size: .9rem;
+		width: 100%;
+		margin: 0;
 	}
 	.resume-header-content {
 		width: 99%;
-		margin: 10px auto;
+		
 
 	}
 	.resume-inner-content {
@@ -726,6 +742,8 @@ BIOGRAPHY QUERIES
 	}
 	.resume-name {
 		font-size: 2rem;
+		width: 100%;
+		margin: 0 auto;
 		
 	}
 	.resume {
